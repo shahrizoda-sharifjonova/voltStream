@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: sans-serif;
+    font-family: Gilroy, sans-serif;
     &:focus,
     &:active{
         outline: none;
@@ -13,6 +13,13 @@
 html,
 body{
     height: 100%;
+}
+body{
+    background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%) no-repeat;
+    width: 100%;
+    &.active{
+        overflow: hidden;
+    }
 }
 .wrapper{
     min-height: 100%;
@@ -26,4 +33,10 @@ button{
     background: none;
     border: none;
     cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }

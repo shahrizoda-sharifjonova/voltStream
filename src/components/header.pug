@@ -1,3 +1,22 @@
 mixin header()
     header.header 
-        p header
+        nav.header__nav.container 
+            a(href="index.html").header__logo
+                img(src="@img/logo.svg", alt="" draggable="false" loading="lazy") 
+            .menu.enable-md 
+                .menu__line 
+            .header__content 
+                ul.header__list 
+                    li.header__li 
+                        a(href="#!").header__link О нас
+                    li.header__li 
+                        a(href="#!").header__link Этапы
+                    li.header__li 
+                        a(href="#!").header__link Отзывы
+                    li.header__li 
+                        a(href="#!").header__link Наши работы
+                    li.header__li 
+                        a(href="#!").header__link Вопрос ответ
+                .header__info  
+                    a(href="#!").header__phone #[img(src="@img/header-phone.svg", alt="" draggable="false" loading="lazy")] +7 800 555 44 80
+                    a(href="#!").header__info-link Заказать обратный звонок 
