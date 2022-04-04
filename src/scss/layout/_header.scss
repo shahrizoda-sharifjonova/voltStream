@@ -29,6 +29,7 @@
             transform: translateX(100%);
             opacity: 0;
             visibility: hidden;
+            border-left: 1px solid #ffffff10;
         }
         &.active{
             transform: translateX(0);
