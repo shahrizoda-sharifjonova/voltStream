@@ -1,0 +1,28 @@
+mixin intro()
+    .intro
+        .intro__body.container 
+            .intro__left 
+                .intro__left-item
+                    h1.intro__title #[b Рассчитаем стоимость ] комплектующих и установки #[b системы заземления ] за 1 день
+                    p.intro__desc Получите подробную смету ответив всего на 5 простых вопросов
+                    button(type="button").intro__btn Получить расчет
+                .intro__content 
+                    .intro__item 
+                        .intro__img 
+                            img(src="@img/intro-icon-1.svg", alt="" draggable="false" loading="lazy")
+                        p.intro__text Собственное производство
+                    .intro__item 
+                        .intro__img 
+                            img(src="@img/intro-icon-2.svg", alt="" draggable="false" loading="lazy")
+                        p.intro__text Наличие товара на складе
+                    .intro__item 
+                        .intro__img 
+                            img(src="@img/intro-icon-3.svg", alt="" draggable="false" loading="lazy")
+                        p.intro__text Выдаем всю документацию
+            .intro__slider
+                .intro__swiper.swiper 
+                    .intro__swiper-wrapper.swiper-wrapper
+                        .intro-slide.swiper-slide 
+                            img(src="@img/intro-img-1.png", alt="" draggable="false" loading="lazy").swiper__img
+                        .intro-slide.swiper-slide 
+                            img(src="@img/intro-img-2.png", alt="" draggable="false" loading="lazy").swiper__img

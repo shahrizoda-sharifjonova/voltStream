@@ -1,0 +1,178 @@
+.intro{   
+    padding-bottom: 95px;
+    @include media(1200){
+        padding-bottom: 45px;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1200){
+            column-gap: 20px;
+        }
+        @include media(768){
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+    &__left{
+        &-item{
+            @include media(576){
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    &__slider{
+        max-width: 100%;
+        width: 50%;
+        @include media(768){
+            width: 100%;
+        }
+    }
+    .swiper{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+        &-slide{
+            width: auto;
+            @include media(1200){
+                width: 500px;
+            }
+            @include media(992){
+                width: 350px;
+            }
+            @include media(768){
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                @include media(1200){
+                    width: 500px;
+                }
+                @include media(992){
+                    width: 350px;
+                }
+                @include media(768){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__title{
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 130%;
+        color: #F2F2F2;
+        max-width: 526px;
+        width: 100%;
+        margin-bottom: 20px;
+        @include media(1200){
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 18px;
+        }
+        @include media(576){
+            font-size: 20px;
+            line-height: 130%;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #F2F2F2;
+        max-width: 370px;
+        width: 100%;
+        margin-bottom: 50px;
+        @include media(1200){
+            font-size: 16px;
+            line-height: 160%;
+            margin-bottom: 26px;
+        }
+        @include media(576){
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    &__btn{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 100%;
+        color: #FFFFFF;
+        padding: 20px 32px;
+        background: #F2323D;
+        border-radius: 6px;
+        display: block;
+        margin-bottom: 100px;
+        transition: 200ms ease;
+        &:hover, &:active{
+            background: #C9000C;
+        }
+        @include media(1200){
+            font-size: 18px;
+            line-height: 100%;
+            margin-bottom: 68px;
+        }
+        @include media(576){
+            margin-bottom: 40px;
+        }
+    }
+    &__content{
+        display: flex;
+        column-gap: 40px;
+        @include media(1200){
+            column-gap: 24px;
+        }
+        @include media(576){
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            background: #FFFFFF10;
+            border-radius: 12px;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 32px;
+            width: 225px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__item{
+        padding-left: 15px;
+        border-left: 1px solid #E9E9E9;
+        @include media(1200){
+            padding-left: 9px;
+        }
+    }
+    &__img{
+        margin-bottom: 16px;
+        @include media(1200){
+            margin-bottom: 10px;
+        }
+        @include media(576){
+            margin-bottom: 18px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #F2F2F2;
+        @include media(1200){
+            font-size: 10px;
+            line-height: 120%;
+        }
+        @include media(576){
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+}

@@ -1,5 +1,9 @@
 .header{
-    padding: 32px 0 45px 0;
+    padding: 32px 0 95px 0;
+    z-index: 1;
+    @include media(1200){
+        padding-bottom: 42px;
+    }
     &__nav{
         display: flex;
         justify-content: space-between;
@@ -24,15 +28,14 @@
             top: 0;
             right: 0;
             height: 100vh;
-            width: 300px;
-            background: #FFFFFF10;
-            transform: translateX(100%);
+            width: 100%;
+            background: transparent;
+            transform: translateY(-20px);
             opacity: 0;
             visibility: hidden;
-            border-left: 1px solid #ffffff10;
         }
         &.active{
-            transform: translateX(0);
+            transform: translateY(0);
             opacity: 1;
             visibility: visible;
         }
