@@ -43,3 +43,28 @@ a{
         transition: 200ms ease;
     }
 }
+.title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    max-width: 400px;
+    @include media(1200){
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 26px;
+    }
+    @include media(576){
+        font-size: 22px;
+        line-height: 130%;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

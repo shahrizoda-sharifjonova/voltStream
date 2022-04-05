@@ -365,6 +365,98 @@
   color: #F2F2F2;
 }
 
+.directions {
+  padding-top: 56px;
+  padding-bottom: 80px;
+  background: #FAFAFA10;
+}
+
+.directions__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 60px;
+}
+
+.directions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  width: calc(50% - 45px);
+}
+
+.directions__img {
+  line-height: 0;
+}
+
+.directions__img img {
+  width: 100%;
+  line-height: 0;
+}
+
+.directions__right {
+  padding-top: 15px;
+}
+
+.directions__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.directions__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+}
+
+.directions__li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 19px;
+  max-width: 270px;
+  width: 100%;
+}
+
+.directions__li::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  left: 0;
+  top: 10px;
+}
+
+.directions__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+  max-width: 288px;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -426,6 +518,15 @@ a {
   -webkit-transition: 200ms ease;
   -o-transition: 200ms ease;
   transition: 200ms ease;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  max-width: 400px;
 }
 
 @media (min-width: 576px) {
@@ -547,6 +648,57 @@ a {
     font-size: 10px;
     line-height: 120%;
   }
+
+  .directions {
+    padding-bottom: 50px;
+  }
+
+  .directions__content {
+    row-gap: 32px;
+  }
+
+  .directions__item {
+    width: calc(50% - 8px);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .directions__img {
+    width: 175px;
+  }
+
+  .directions__subtitle {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 12px;
+  }
+
+  .directions__list {
+    row-gap: 9px;
+  }
+
+  .directions__li {
+    font-size: 14px;
+    line-height: 140%;
+    padding-left: 0;
+  }
+
+  .directions__li::before {
+    display: none;
+  }
+
+  .directions__desc {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 26px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -572,6 +724,10 @@ a {
 
   .intro .swiper-slide img {
     width: 350px;
+  }
+
+  .directions__right {
+    padding-top: 0;
   }
 }
 
@@ -639,6 +795,14 @@ a {
 
   .intro .swiper-slide img {
     width: 100%;
+  }
+
+  .directions__item {
+    width: 100%;
+  }
+
+  .directions__right {
+    padding-top: 15px;
   }
 }
 
@@ -720,5 +884,62 @@ a {
   .intro__text {
     font-size: 18px;
     line-height: 120%;
+  }
+
+  .directions {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .directions__content {
+    row-gap: 30px;
+  }
+
+  .directions__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .directions__img {
+    width: 300px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .directions__img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .directions__right {
+    padding-top: 20px;
+  }
+
+  .directions__subtitle {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .directions__desc {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
