@@ -4,7 +4,7 @@ functions.isWebp();
 
 import Swiper from 'swiper/bundle';
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 const swiper = new Swiper();
 
@@ -25,7 +25,39 @@ new Swiper(".intro__swiper", {
     spaceBetween: 20,
     autoplay: {
         delay: 2500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
+    },
+});
+
+new Swiper(".comments__swiper", { 
+    slidesPerView: 4,
+    spaceBetween: 40,
+    modules: [Navigation],
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+    },
+    breakpoints: {
+        992: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        },
+        768:{
+        slidesPerView: 3,
+        spaceBetween: 10,
+        },
+        576:{
+        slidesPerView: 2,
+        spaceBetween: 10,
+        },
+        320:{
+        slidesPerView: 2,
+        spaceBetween: 10,
+        }
     },
 });
 

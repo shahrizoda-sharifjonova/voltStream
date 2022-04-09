@@ -1,5 +1,11 @@
 .works{
     padding: 80px 0;
+    @include media(1200){
+        padding: 50px 0;
+    }
+    @include media(576){
+        padding: 40px 0;
+    }
     background: #FAFAFA10;
     &__title{
         max-width: 735px !important;
