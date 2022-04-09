@@ -457,6 +457,87 @@
   width: 100%;
 }
 
+.view {
+  padding: 80px 0;
+}
+
+.view img {
+  width: 100%;
+}
+
+.works {
+  padding: 80px 0;
+  background: #FAFAFA10;
+}
+
+.works__title {
+  max-width: 735px !important;
+  width: 100% !important;
+}
+
+.works__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.works__item {
+  max-width: calc(33.33333% - 26.666666px);
+  width: 360px;
+  padding: 30px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05));
+          filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05));
+  border-radius: 6px;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works__item:hover,
+.works__item:active {
+  background: #F2323D;
+  -webkit-box-shadow: 0px 10px 20px rgba(116, 18, 18, 0.05);
+          box-shadow: 0px 10px 20px rgba(116, 18, 18, 0.05);
+  border-radius: 6px;
+  border: 1px solid #ffffff10;
+}
+
+.works__item::before {
+  content: attr(data-target);
+  position: absolute;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: #FFFFFF;
+  top: 15px;
+  right: 15px;
+}
+
+.works__item:nth-of-type(2) p {
+  width: 170px;
+}
+
+.works__p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 165%;
+  color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -469,6 +550,11 @@
 *:focus,
 *:active {
   outline: none;
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 body {
@@ -693,6 +779,10 @@ a {
     line-height: 140%;
   }
 
+  .view {
+    padding: 50px 0;
+  }
+
   .title {
     font-weight: 600;
     font-size: 24px;
@@ -803,6 +893,10 @@ a {
 
   .directions__right {
     padding-top: 15px;
+  }
+
+  .view {
+    padding: 40px 0;
   }
 }
 

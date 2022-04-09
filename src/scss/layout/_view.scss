@@ -1,0 +1,12 @@
+.view{
+    padding: 80px 0;
+    @include media(1200){
+        padding: 50px 0;
+    }
+    @include media(768){
+        padding: 40px 0;
+    }
+    img{
+        width: 100%;
+    }
+}
