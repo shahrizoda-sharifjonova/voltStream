@@ -621,6 +621,89 @@
   right: 0;
 }
 
+.gallery {
+  padding: 80px 0;
+}
+
+.gallery__slider {
+  max-width: 100%;
+  position: relative;
+}
+
+.gallery__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  position: absolute;
+  height: 20px;
+  top: -60px;
+  right: 20px;
+}
+
+.gallery .swiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.gallery .swiper-button-prev {
+  position: relative;
+  width: 100px;
+  height: 20px;
+}
+
+.gallery .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.4;
+}
+
+.gallery .swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../img/comments-prev.svg") no-repeat;
+  top: 0;
+  right: 0;
+}
+
+.gallery .swiper-button-next {
+  position: relative;
+  width: 100px;
+  height: 20px;
+}
+
+.gallery .swiper-button-next.swiper-button-disabled {
+  opacity: 0.4;
+}
+
+.gallery .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../img/comments-next.svg") no-repeat;
+  top: 0;
+  right: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -907,6 +990,18 @@ a {
     width: 100%;
   }
 
+  .gallery {
+    padding-top: 50px;
+  }
+
+  .gallery .swiper-slide {
+    width: 175px;
+  }
+
+  .gallery .swiper-slide img {
+    width: 100%;
+  }
+
   .title {
     font-weight: 600;
     font-size: 24px;
@@ -1069,6 +1164,25 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .gallery__slider {
+    width: 100%;
+  }
+
+  .gallery__buttons {
+    top: auto;
+    bottom: -60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1201,6 +1315,10 @@ a {
   }
 
   .comments {
+    padding-top: 30px;
+  }
+
+  .gallery {
     padding-top: 30px;
   }
 
