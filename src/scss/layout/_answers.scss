@@ -1,0 +1,123 @@
+.answers{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #ffffff10;
+    @include media(1200){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__title{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+        @include media(1200){
+            column-gap: 13px;
+        }
+        @include media(768){
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+    &__left,
+    &__right{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+        @include media(992){
+            row-gap: 15px;
+        }
+    }
+    .accordion{
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05));
+        border-radius: 6px;
+        &__button{
+            span{
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 24px;
+                color: #FFFFFF;
+                display: block;
+                max-width: 450px;
+                width: 100%;
+                @include media(1200){
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+                @include media(576){
+                    font-size: 11px;
+                    max-width: 280px;
+                }
+            }
+            padding: 30px 30px 30px 30px;
+            position: relative;
+            @include media(992){
+                padding: 19px;
+            }
+            @include media(576){
+                padding: 15px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                background: url('../img/answers-icon.svg') no-repeat;
+                width: 24px;
+                height: 24px;
+                background-position: center;
+                margin-left: 12px;
+                @include media(1200){
+                    width: 15px;
+                    height: 15px;
+                    background: url('../img/answers-icon_xl.svg');
+                }
+                @include media(992){
+                    top: 19px;
+                    right: 19px;
+                }
+                @include media(576){
+                    top: 15px;
+                    right: 15px;
+                    background: url('../img/answers-icon_sm.svg') no-repeat;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            &.active{
+                padding-bottom: 19px;
+                @include media(576){
+                    padding-bottom: 15px;
+                }
+                &::before{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &__content{
+            padding: 0 30px 30px 30px;
+            display: none;
+            @include media(992){
+                padding: 0 19px 19px 19px;
+            }
+            @include media(576){
+                padding: 0 15px 15px 15px;
+            }
+        }
+        &__p{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 170%;
+            color: #FFFFFF;
+            @include media(1200){
+                font-size: 12px;
+            }
+        }
+    }
+}
