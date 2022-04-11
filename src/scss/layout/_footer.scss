@@ -1,1 +1,108 @@
-// Футер
+.footer{
+    background: url('../img/footer-bg.png') center / cover no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    @include media(768){
+        background: url('../img/footer-bg.png') top / cover no-repeat;
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #FDFDFD;
+        box-shadow: 0px 10px 20px rgba(116, 18, 18, 0.05);
+        border-radius: 6px;
+        padding: 60px 60px 52px 60px;
+        @include media(1200){
+            padding: 30px;
+        }
+        @include media(768){
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            top: auto;
+            transform: translateY(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 130%;
+        color: #333333;
+        max-width: 390px;
+        width: 100%;
+        margin-bottom: 25px;
+        @include media(1200){
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 21px;
+        }
+        @include media(768){
+            font-size: 22px;
+            line-height: 130%;
+            text-align: center;
+            max-width: 280px;
+            margin-bottom: 15px;
+        }
+    }
+    &__phone,
+    &__link{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #4F4F4F;
+        display: block;
+        @include media(1200){
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+        }
+        @include media(768){
+            font-size: 20px;
+            line-height: 160%;
+        }
+    }
+    &__link{
+        margin-bottom: 25px;
+        @include media(768){
+            margin-bottom: 12px;
+        }
+    }
+    &__adress{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: #4F4F4F;
+        margin-bottom: 30px;
+        @include media(1200){
+            font-size: 16px;
+            line-height: 160%;
+        }
+        @include media(768){
+            font-size: 16px;
+            line-height: 160%;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+    }
+    &__icons{
+        display: flex;
+        column-gap: 30px;
+    }
+    &__icon{
+        svg{
+            path{
+                fill: #F2323D;
+                transition: 200ms ease;
+                &:hover{
+                    fill: #C9000B;
+                }
+            }
+        }
+    }
+}
