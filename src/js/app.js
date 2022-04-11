@@ -93,5 +93,37 @@ new Swiper(".gallery__swiper", {
     },
 });
 
+new Swiper(".systems__swiper", { 
+    slidesPerView: 4,
+    spaceBetween: 40,
+    modules: [Navigation],
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+    },
+    breakpoints: {
+        992: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        },
+        768:{
+        slidesPerView: 3,
+        spaceBetween: 10,
+        },
+        576:{
+        slidesPerView: 2,
+        spaceBetween: 10,
+        },
+        320:{
+        slidesPerView: 2,
+        spaceBetween: 10,
+        }
+    },
+});
+
 
 
