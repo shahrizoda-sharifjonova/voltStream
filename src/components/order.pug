@@ -1,0 +1,12 @@
+mixin order()
+    .order 
+        .order__body.container 
+            .order__left 
+                img(src="@img/order-img.png", alt="" draggable="false" loading="lazy").disable-lg
+                img(src="@img/order-img_lg.png", alt="" draggable="false" loading="lazy").enable-lg
+            .order__right 
+                h2.order__title Закажите #[b бесплатную консультацию] инженера и получите полный расчет стоимости комплектующих и установки
+                form(action="").order__form     
+                    input(type="text" placeholder="Ваше имя").order__input 
+                    input(type="number" placeholder="Ваш телефон").order__input 
+                    button(type="submit").order__btn Заказать
